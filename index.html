@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Movie Search</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search</h1>
+        <div class="search-box">
+            <input type="text" id="movieTag" placeholder="Enter movie name..." />
+            <button onclick="search()">Search</button>
+        </div>
+        <div class="movie-details">
+            <img id="poster" class="poster" />
+            <div class="movie-info">
+                <h2 id="title"></h2>
+                <p><strong>Year:</strong> <span id="year"></span></p>
+                <p><strong>Released Date:</strong> <span id="releasedDate"></span></p>
+                <p><strong>IMDb Rating:</strong> <span id="imdb"></span></p>
+                <p id="plot"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
