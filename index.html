@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title> <!-- Page Title Added Here -->
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
-    <title>Movie Search</title>
 </head>
 <body>
     <div class="container">
-        <h1>Movie Search</h1>
+        <h1>Movie Finder</h1>
         <div class="search-box">
-            <input type="text" id="movieTag" placeholder="Enter movie name..." />
+            <input type="text" id="movieTag" placeholder="Enter movie title..." oninput="showSuggestions()">
             <button onclick="search()">Search</button>
         </div>
+        <ul class="suggestions-list" id="suggestions"></ul>
         <div class="movie-details">
-            <img id="poster" class="poster" />
+            <img class="poster" id="poster" src="" alt="Movie Poster">
             <div class="movie-info">
-                <h2 id="title"></h2>
+                <h2 id="title">Movie Title</h2>
                 <p><strong>Year:</strong> <span id="year"></span></p>
-                <p><strong>Released Date:</strong> <span id="releasedDate"></span></p>
                 <p><strong>IMDb Rating:</strong> <span id="imdb"></span></p>
-                <p id="plot"></p>
+                <p><strong>Released:</strong> <span id="releasedDate"></span></p><br>
+                <p id="plot">Plot goes here...</p>
             </div>
         </div>
     </div>
-    
-    <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
-            <p>&copy; 2025 by Kavinda Appuhamy | All Rights Reserved.</p> 
+            <p>&copy; 2025 Kavinda Appuhamy. All rights reserved.</p>
         </div>
     </footer>
 </body>
