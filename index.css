@@ -24,25 +24,6 @@ html, body {
     animation: fadeIn 1s ease-in-out;
 }
 
-.container {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 20px;
-    }
-    .search-box {
-        flex-direction: column;
-    }
-    button {
-        width: 100%;
-        margin-top: 10px;
-    }
-}
-
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -86,7 +67,7 @@ button {
     background: rgba(255, 255, 255, 0.3);
     color: white;
     transition: 0.3s ease;
-    animation: pulse 2s infinite;
+    /* animation: pulse 2s infinite; */
 }
 
 button:hover {
@@ -141,7 +122,6 @@ button:hover {
 .poster {
     width: 100%;
     max-width: 300px;
-    height: auto;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
@@ -149,11 +129,6 @@ button:hover {
 
 .poster:hover {
     transform: scale(1.05);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Movie Info */
@@ -216,24 +191,4 @@ img {
 
 .footer-iconTop a:hover {
     color: #ffcc00;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 20px;
-    }
-    .search-box {
-        flex-direction: row;
-    }
-    button {
-        width: 100%;
-        margin-top: 10px;
-    }
-    .movie-details {
-        flex-direction: column;
-    }
-    .poster {
-        max-width: 100%;
-    }
 }
