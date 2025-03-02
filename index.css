@@ -87,3 +87,35 @@ button:hover {
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-iconTop {
+    margin-top: 10px;
+}
+
+.footer-iconTop a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-iconTop a:hover {
+    color: #ffcc00;
+}
