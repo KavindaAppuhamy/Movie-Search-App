@@ -63,3 +63,9 @@ function showSuggestions() {
 
 // Attach event listener to the input field
 document.getElementById('movieTag').addEventListener('input', showSuggestions);
+
+document.getElementById("movieTag").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        search(); // Calls the existing search function
+    }
+});
