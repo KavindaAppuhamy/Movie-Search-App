@@ -224,7 +224,7 @@ img {
         padding: 20px;
     }
     .search-box {
-        flex-direction: column;
+        flex-direction: row;
     }
     button {
         width: 100%;
